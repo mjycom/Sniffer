@@ -4,7 +4,7 @@ import commands
 
 def getInterface():
     #return re.findall('([0-9a-zA-Z].+).+IEEE', commands.getoutput('iwconfig'))[-1]
-    return '802.11n'
+    return 'wlan0'
 
 def getLocalIP(iface):
     #ip = re.findall('\s.+flags.+\s.+inet (.+)  net', commands.getoutput('ifconfig'))[-1]
