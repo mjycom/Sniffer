@@ -6,7 +6,8 @@ def getInterface():
     return re.findall('([0-9a-zA-Z].+).+IEEE', commands.getoutput('iwconfig'))[-1]
 
 def getLocalIP(iface):
-    ip = re.findall('\s.+flags.+\s.+inet (.+)  net', commands.getoutput('ifconfig'))[-1]
+    #ip = re.findall('\s.+flags.+\s.+inet (.+)  net', commands.getoutput('ifconfig'))[-1]
+    ip = '192.168.1.130'
     return ip
 
 def StartIface(iface, newiface):
